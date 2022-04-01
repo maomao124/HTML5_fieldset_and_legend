@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：HTML5_fieldset_and_legend
+  File name(文件名): test1
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/1
+  Time(创建时间)： 19:07
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="hotAirBalloon.css">
+    <style>
+        form {
+            width: 300px;
+        }
+
+        body {
+            background-color: #c1faff;
+        }
+
+        fieldset {
+            background-color: blanchedalmond;
+            width: 300px;
+            transition: all 2s linear 0s;
+        }
+
+        fieldset:hover {
+            background-color: #49ff42;
+            transition: all 2s linear 0s;
+        }
+
+        div input[type="reset"] {
+            color: red;
+            font-size: 24px;
+        }
+
+        div input[type="submit"] {
+            color: green;
+            font-size: 24px;
+        }
+
+        div.button {
+            text-align: center;
+            width: 100%;
+        }
+
+        div.p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+<div class="p">
+    <form class="animated slideInDown" method="post" action="result.jsp">
+        <fieldset>
+            <legend>用户</legend>
+            <label>用户名：<input type="text" name="username"/></label><br/>
+            <label>密　码：<input type="text" name="pwd1"/></label><br/>
+            <label>确　认：<input type="text" name="pwd2"/></label><br/>
+        </fieldset>
+        <br/>
+
+        <fieldset>
+            <legend>个人信息</legend>
+            <label>姓　名：<input type="text" name="name"/></label><br/>
+            <label>单　位：<input type="text" name="title"/></label><br/>
+            <label>职　位：<input type="text" name="position"/></label><br/>
+            <label>职　称：<input type="text" name="title"/></label><br/>
+            <label>手　机：<input type="text" name="tel"/></label><br/>
+            <label>邮　箱：<input type="text" name="email"/></label><br/>
+        </fieldset>
+        <br/>
+        <div class="button">
+            <input type="reset" value="重置"/>
+            <input type="submit" value="提交"/>
+        </div>
+    </form>
+</div>
+
+<div class="left animated slideInUp">
+    <figure class="balloon">
+        <div class="envelope">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="basket">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </figure>
+</div>
+<div class="right animated slideInUp">
+    <figure class="balloon">
+        <div class="envelope">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="basket">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </figure>
+</div>
+<div class="left1 animated slideInDown">
+    <figure class="balloon">
+        <div class="envelope">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="basket">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </figure>
+</div>
+<div class="right1 animated slideInDown">
+    <figure class="balloon">
+        <div class="envelope">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="basket">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </figure>
+</div>
+</body>
+</html>
